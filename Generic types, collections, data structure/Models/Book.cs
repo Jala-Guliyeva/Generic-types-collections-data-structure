@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Generic_types__collections__data_structure.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +9,20 @@ namespace Generic_types__collections__data_structure.Models
     {
         public string AuthorName { get; set; }
         public int PageCount { get; set; }
-        
+       
+
+        public override void Cell()
+        {
+            if (Count>0)
+            {
+                Count--;
+                TotalInCome += Price;
+                return;
+
+            }
+            throw new ProductCountIsZeroException("count is zero");
+         
+        }
 
         public override void ShowInfo()
         {
