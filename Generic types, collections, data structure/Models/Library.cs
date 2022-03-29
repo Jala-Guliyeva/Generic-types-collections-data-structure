@@ -15,11 +15,12 @@ namespace Generic_types__collections__data_structure.Models
             BookLimit = booklimit;
         }
       
-        public void AddBook()
+        public void AddBook(Book book)
         {
-            Books.Add(new Book());
-            if (true)
+          
+            if (Books.Count<BookLimit)
             {
+                Books.Add((book);
                 return;
             }
             else
@@ -34,7 +35,7 @@ namespace Generic_types__collections__data_structure.Models
             {
                 throw new NullReferenceException("Bosh ola bilmez");
             }
-            return null;
+          return  null;
             
         }
         public void RemoveById(int? id)
