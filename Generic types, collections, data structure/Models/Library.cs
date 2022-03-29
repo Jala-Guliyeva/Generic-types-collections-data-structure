@@ -29,7 +29,7 @@ namespace Generic_types__collections__data_structure.Models
             }
 
         }
-        public void GetBookById(int? id)
+        public Book GetBookById(int? id)
         {
             if (id == null)
             {

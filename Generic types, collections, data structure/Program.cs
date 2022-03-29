@@ -6,7 +6,7 @@ namespace Generic_types__collections__data_structure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
