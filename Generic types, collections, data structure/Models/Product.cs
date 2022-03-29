@@ -17,5 +17,8 @@ namespace Generic_types__collections__data_structure.Models
             _id++;
             Id= _id;    
         }
+        public abstract void ShowInfo();
+        public abstract void Cell();
+
     }
 }
