@@ -8,10 +8,10 @@ namespace Generic_types__collections__data_structure.Models
     {
         public  int Id { get;  }
         private static int _id;
-        public abstract string Name { get; set; }
-        public abstract int Price { get; set; }
-        public abstract int Count { get; set; }
-        public abstract int TotalInCome { get; set; }
+        public  string Name { get; set; }
+        public  double Price { get; set; }
+        public  int Count { get; set; }
+        public  double TotalInCome { get; protected set; }
         public Product()
         {
             _id++;
